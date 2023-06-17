@@ -1,0 +1,20 @@
+{
+    'data': {
+        'Accelerometer.csv': {'timestamp': 'time', 'columns': ['x', 'y', 'z'], 'prefix': 'a_'},
+        'Gravity.csv': {'timestamp': 'time', 'columns': ['x', 'y', 'z'], 'prefix': 'g_'},
+        'Gyroscope.csv': {'timestamp': 'time', 'columns': ['x', 'y', 'z'], 'prefix': 'omega_'},
+        'Location.csv': {
+            'timestamp': 'time',
+            'columns': ['latitude', 'longitude', 'altitude', 'bearing', 'speed'],
+            'prefix': 'loc_',
+            'disp': {
+                'columns': ['loc_latitude', 'loc_longitude', 'loc_altitude', 'loc_bearing', 'loc_speed'],
+                'matches': ['exact', 'exact', 'exact', 'exact', 'exact'],
+                'elements': ['line', 'line', 'line', 'line', 'line']
+            }
+        },
+        'Magnetometer.csv': {'timestamp': 'time', 'columns': ['x', 'y', 'z'], 'prefix': 'B_'},
+        'Orientation.csv': {'timestamp': 'time', 'columns': ['yaw', 'pitch', 'roll', 'qw', 'qx', 'qy', 'qz'], 'prefix': 'o_'},
+    },
+    'labels': {}
+}
